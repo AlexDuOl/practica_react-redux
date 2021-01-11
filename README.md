@@ -1,3 +1,8 @@
+# Canal de youtobe para esta practica
+
+gammafp [gammafp](https://www.youtube.com/watch?v=mitOmHw5e0o&list=PLL_H5w4KA8dNo_u3fhKcr1aC8dqAqwWiV&index=1).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

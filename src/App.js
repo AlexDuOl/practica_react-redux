@@ -1,7 +1,10 @@
 import './App.css';
 import halo from './img/halo.jpg';
-import CantidadJuego from './components/CantidadJuego';
-import ComprarJuego from './components/CompraJuego';
+//import CantidadJuego from './components/CantidadJuego';
+//import ComprarJuego from './components/CompraJuego';
+
+import CantidadJuegoHook from './components/CantidadJuego.hook';
+import ComprarJuegoHook from './components/CompraJuego.hook';
 
 import store from './redux/store';
 import { Provider } from 'react-redux';
@@ -16,11 +19,11 @@ function App() {
           </div>
           <div className="content">
             <div className="header">
-              <CantidadJuego />
+              <CantidadJuegoHook />
             </div>
             <br/>
             <div className="meta">
-              <ComprarJuego />
+              <ComprarJuegoHook />
             </div>
           </div>
         </div>
