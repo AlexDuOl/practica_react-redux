@@ -15,14 +15,14 @@ const BuscadorPokemon = () => {
                         value={pokemon_name}
                         onChange={
                             (event) => {
-                                event.preventDefault();
                                 set_pokemon_name(event.target.value);
                             }
                         }    
                     />
                 </div>
                 <button className="ui button" type="submit" onClick={
-                    () => {
+                    (e) => {
+                        e.preventDefault()
                         dispatch(fetchPokemon(pokemon_name))
                     }
                 }>Enviar</button>

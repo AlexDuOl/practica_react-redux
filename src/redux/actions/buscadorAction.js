@@ -27,9 +27,10 @@ export const fetchPokemonFailure = (error) => {
 
 
 const FetchPokemon = (valor) => {
-    return (dispatch) => {
+
+    return (dispatch) => {       
         dispatch(fetchPokemonRequest());
-        Axios.get('https://pokeapi.co/api/v2/pokemon/${valor}')
+        Axios.get(`https://pokeapi.co/api/v2/pokemon/${valor}`)
         .then(response => {
             dispatch(fetchPokemonSuccess([response.data]))
         })
